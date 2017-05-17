@@ -9,5 +9,6 @@ namespace EventSourcingLibrary
         IList<IEvent> ReadByIds(IEnumerable<Guid> eventIds);
         void Index(IEvent eventToIndex, IndexInfo indexInfo);
         void Index(IList<IEvent> eventsToIndex, IndexInfo indexInfo);
+        IList<IEvent> ReadByIndex(IndexInfo indexInfo, IList<string> propertyValues);
     }
 }

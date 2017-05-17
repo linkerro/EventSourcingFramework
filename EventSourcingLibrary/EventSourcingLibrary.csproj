@@ -38,6 +38,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dispatcher.cs" />
     <Compile Include="IEvent.cs" />
     <Compile Include="IEventStore.cs" />
     <Compile Include="IndexInfo.cs" />

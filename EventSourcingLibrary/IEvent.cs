@@ -8,6 +8,6 @@ namespace EventSourcingLibrary
         DateTime Timestamp { get;  }
         string EventType{get;}
         string Blob { get;  }
-        
+        IEvent Parse(string blob);
     }
 }
